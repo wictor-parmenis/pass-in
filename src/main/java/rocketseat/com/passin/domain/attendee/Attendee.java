@@ -26,6 +26,8 @@ public class Attendee {
     @Column(nullable = false)
     private String name;
 
+    @Column(nullable = false)
+    private String email;
 
     @ManyToOne
     @JoinColumn(name = "event_id", nullable = false)

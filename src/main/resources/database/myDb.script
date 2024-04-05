@@ -1,4 +1,4 @@
-SET DATABASE UNIQUE NAME HSQLDB8EAC2400C1
+SET DATABASE UNIQUE NAME HSQLDB8EAF3A0D86
 SET DATABASE DEFAULT RESULT MEMORY ROWS 0
 SET DATABASE EVENT LOG LEVEL 0
 SET DATABASE TRANSACTION CONTROL LOCKS
@@ -29,7 +29,7 @@ SET FILES NIO TRUE
 SET FILES NIO SIZE 256
 SET FILES LOG TRUE
 SET FILES LOG SIZE 50
-SET FILES CHECK 778
+SET FILES CHECK 304
 SET DATABASE COLLATION "SQL_TEXT" PAD SPACE
 CREATE USER SA PASSWORD DIGEST 'd41d8cd98f00b204e9800998ecf8427e'
 ALTER USER SA SET LOCAL TRUE
@@ -54,8 +54,9 @@ GRANT DBA TO SA
 SET SCHEMA SYSTEM_LOBS
 INSERT INTO BLOCKS VALUES(0,2147483647,0)
 SET SCHEMA PUBLIC
-INSERT INTO "flyway_schema_history" VALUES(1,'1','create-table-events','SQL','V1__create-table-events.sql',1697759344,'SA','2024-04-04 23:43:44.842484',6,'1')
-INSERT INTO "flyway_schema_history" VALUES(2,'2','create-table-attendees','SQL','V2__create-table-attendees.sql',1911608110,'SA','2024-04-04 23:43:44.862435',2,'1')
-INSERT INTO "flyway_schema_history" VALUES(3,'3','create-table-checkins','SQL','V3__create-table-checkins.sql',1103835454,'SA','2024-04-04 23:43:44.874431',1,'1')
-INSERT INTO "flyway_schema_history" VALUES(4,'4','create-indexes','SQL','V4__create-indexes.sql',553901455,'SA','2024-04-04 23:43:44.883431',2,'1')
-INSERT INTO EVENTS VALUES('de381899-7b24-4d9a-8967-6037689269db','Parmenis show','Abertura do show: Retrato de um instante.','parmenisshow',500)
+INSERT INTO "flyway_schema_history" VALUES(1,'1','create-table-events','SQL','V1__create-table-events.sql',1697759344,'SA','2024-04-05 14:06:41.546170',6,'1')
+INSERT INTO "flyway_schema_history" VALUES(2,'2','create-table-attendees','SQL','V2__create-table-attendees.sql',1911608110,'SA','2024-04-05 14:06:41.566842',2,'1')
+INSERT INTO "flyway_schema_history" VALUES(3,'3','create-table-checkins','SQL','V3__create-table-checkins.sql',1103835454,'SA','2024-04-05 14:06:41.581312',3,'1')
+INSERT INTO "flyway_schema_history" VALUES(4,'4','create-indexes','SQL','V4__create-indexes.sql',553901455,'SA','2024-04-05 14:06:41.591231',1,'1')
+INSERT INTO EVENTS VALUES('da6cbd0d-cb66-47a8-8236-92d2cf5a15c1','Parmenis show Alameda','Abertura do show: Retrato de um instante.','parmenisshowalameda',500)
+INSERT INTO ATTENDEES VALUES('6a905ed9-6d92-4695-a887-dd79444c9a36','Wictor GOMES','wictor@email.com','da6cbd0d-cb66-47a8-8236-92d2cf5a15c1',NULL)

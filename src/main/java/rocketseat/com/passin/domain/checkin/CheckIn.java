@@ -10,6 +10,7 @@ import rocketseat.com.passin.domain.attendee.Attendee;
 import java.time.LocalDateTime;
 
 @Entity
+@Table(name = "check_ins")
 @Getter
 @Setter
 @AllArgsConstructor
